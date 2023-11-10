@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        label {
+            font-weight: bold;
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-container {
+            background-color: aqua;
+            border: 1px solid red;
+            border-radius: 10px;
+            box-shadow: 0 0 10px blueviolet;
+            padding: 30px;
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button-container button {
+            padding: 5px 10px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>FORM ENTRY DATA PEGAWAI</h2>
+        <form method="post" action="">
+            <div class="form-group">
+                <label for="nik">NIK</label>
+                <input type="text" id="nik" name="nik">
+            </div>
+            <div class="form-group">
+                <label for="nama">NAMA</label>
+                <input type="text" id="nama" name="nama">
+            </div>
+            <div class="form-group">
+                <label for="tlahir">Tempat Lahir</label>
+                <input type="text" id="tlahir" name="tlahir">
+            </div>
+            <div class="form-group">
+                <label for="date">Tanggal Lahir</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="alma">Alamat</label>
+                <textarea id="alma" name="alma" rows="5" cols="30"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="number">No Telepon</label>
+                <input type="number" id="number" name="number">
+            </div>
+            <div class="form-group">
+                <label for="jbtn">Jabatan:</label>
+                <select name="jbtn" id="jbtn">
+                    <option value="Pemasaran">Atasan</option>
+                    <option value="Akuntansi">Bawahan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <select name="status" id="status">
+                    <option value="Aktif">Menikah</option>
+                    <option value="Tidak Aktif">Lajang</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="button-container">
+                    <button type="submit">Simpan</button>
+                    <button type="reset">Batal</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
